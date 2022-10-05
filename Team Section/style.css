@@ -1,0 +1,194 @@
+@font-face
+{
+	font-family: 'Georgia';
+	src: url('assets/fonts/Georgia/Georgia Regular font.ttf');
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #96a6a7;
+	font-family: 'Georgia';
+	font-weight: 500;
+	background-color: #bbd3df;
+}
+
+.everything
+{ 
+	overflow: hidden;
+}
+
+/* .team-section
+{
+	background-color: #393b3c;
+	padding: 20px;
+} */
+.team-heading
+{
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 30px 45px;
+	padding: 5px 7px;
+	border-radius: 10px;
+	color: #fff;
+}
+.member
+{
+	text-align: center;
+	background-color: #1c7bbbd2;
+	color: #fff;
+	padding-bottom: 30px; 
+}
+.member h2
+{
+	font-size: 1.5rem;
+	padding: 20px 0px;
+	margin: auto;
+	background-color: #0c4a74;
+}
+.player
+{
+	position: relative;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.playerimg
+{
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.playerimg img
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	margin-top: 10px;
+}
+.player:hover img
+{
+	opacity: 0;
+}
+.player:hover .playerimg-when-hover
+{
+	opacity: 1;
+}
+.designation
+{
+	position: absolute;
+	left: 0;
+    right: 0;
+    top: 250px;
+}
+.designation h3
+{
+	background-color: #0c4a74;
+	margin: 0px 40px 20px 40px;
+	padding: 8px 0px;
+	font-size: 1rem;
+}
+.member p
+{
+	font-size: 1rem;
+	padding: 30px 10px 10px 20px;
+	text-align: left;
+}
+.member a
+{	
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	color: #fff;
+	margin: 15px 15px;
+}
+.member a i
+{
+	padding-right: 10px;
+}
+.playerimg-when-hover
+{
+	position: absolute;
+    top: 45%;
+    right: 0;
+    bottom: 0;
+    left: 22%;
+	opacity: 0;
+    transition: 0.5s;
+}
+.playerimg-when-hover a
+{
+	float: left;
+	margin: 0px 5px 0px 5px;
+}
+.playerimg-when-hover a i
+{
+	color: #0c4a74;
+	font-size: 30px;
+}
+
+
+@media (max-width : 1199px)
+{
+	.designation
+	{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 210px;
+	}
+	.playerimg-when-hover a i
+	{
+		font-size: 25px;
+	}
+}
+@media (max-width : 991px)
+{
+	.team-heading
+	{
+		font-size: 1.5rem;
+		margin: 10px 5px;
+	}
+	.member
+	{
+		padding-bottom: 10px;
+	}
+	.member h2
+	{
+		font-size: 1rem;
+	}
+	.designation
+	{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 150px;
+	}
+	.designation h3
+	{
+		font-size: .8rem;
+		margin: 0px 40px 0px 40px;
+	}
+	.member p
+	{
+		padding : 5px;
+		font-size: .8rem;
+		margin-bottom: 5px;
+	}
+	.member a
+	{
+		margin : 5px 0px 5px 5px; 
+	}
+	.member a i 
+	{
+		padding-right: 2px;
+	}
+	.playerimg-when-hover a i
+	{
+		font-size: 20px;
+	}
+}
